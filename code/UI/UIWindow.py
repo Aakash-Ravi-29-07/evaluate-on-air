@@ -56,7 +56,8 @@ while flag == True:
                 code = buttonPressed(draw_xy)
                 result = ui_service.performOp(canvas, code)
                 print("Result : " + str(result))
-                writeResult(str(result), canvas)
+                canvas = writeResult(str(result), canvas)
+                # canvas = np.where(res_image, res_image, canvas)
                 time.sleep(0.5)
             elif checkIfWithinRec(draw_xy):
                 if line_xy is None:
@@ -73,6 +74,7 @@ while flag == True:
             line_xy = None
 
     cv.imshow("frame", frame)
+
     cv.imshow(win_name, np.where(hands_image, hands_image, canvas))
 
     flag, frame = camera.read()

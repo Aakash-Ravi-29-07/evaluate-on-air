@@ -38,5 +38,7 @@ def checkIfWithinRec(xy):
     return False
 
 def writeResult(result, canvas):
-       cv.putText(canvas, result, (300, 235), cv.FONT_HERSHEY_PLAIN, 2, (255, 0, 0), 2) 
+       cv.rectangle(canvas, (275, 200), (375, 300), (255, 0, 255), cv.FILLED)
+       cv.putText(canvas, result, (300, 235), cv.FONT_HERSHEY_PLAIN, 3, (255, 0, 0), 2) 
+       return canvas
 
