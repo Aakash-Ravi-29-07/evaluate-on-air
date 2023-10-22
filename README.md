@@ -1,5 +1,5 @@
 # evaluate-on-air
-Draw numbers or expressions on air and evaluate them by providing the operations. 
+Draw numbers on air and evaluate them by providing the operations. 
 
 Libraries or modules used:
 1. **opencv** -> for opening images, creating windows, pre-processing the image inputs, enabling the users to draw on the screen, click on virtual buttons.
